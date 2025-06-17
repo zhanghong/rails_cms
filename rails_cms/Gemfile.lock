@@ -1,3 +1,9 @@
+PATH
+  remote: ../cms_core
+  specs:
+    cms_core (0.1.0)
+      rails (~> 8.0.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -367,6 +373,7 @@ DEPENDENCIES
   bootsnap
   brakeman
   capybara
+  cms_core!
   debug
   importmap-rails
   jbuilder

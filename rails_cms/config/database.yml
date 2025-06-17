@@ -15,8 +15,8 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  host: postgres
-  port: 5432
+  host: <%= ENV["CMS_DB_HOST"] %>
+  port: <%= ENV["CMS_DB_PORT"] %>
   username: <%= ENV["CMS_DB_USER"] %>
   password: <%= ENV["CMS_DB_PASSWORD"] %>
   pool: <%= ENV["CMS_DB_MAX_THREADS"] %>
